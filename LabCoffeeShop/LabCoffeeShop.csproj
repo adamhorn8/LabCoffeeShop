@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Controllers\Index.cshtml" />
+    <Content Remove="Views\Register\Index.cshtml" />
+    <Content Remove="wwwroot\images\LogoMakr_8l2gSO.png" />
+    <Content Remove="wwwroot\images\LogoNoTxt.png" />
+    <Content Remove="wwwroot\images\HomeBackground.jpg" />
+    <Content Remove="wwwroot\images\MainLogo.png" />
+    <Content Remove="wwwroot\images\HomePageImageLeft.jpg" />
+    <Content Remove="wwwroot\images\HomePageImageRight.jpg" />
+    <Content Remove="wwwroot\images\HomePageBottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Customer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Content\Site.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\images\LogoNoTxt.png" />
+    <None Include="wwwroot\images\HomeBackground.jpg" />
+    <None Include="wwwroot\images\MainLogo.png" />
+    <None Include="wwwroot\images\HomePageImageLeft.jpg" />
+    <None Include="wwwroot\images\HomePageImageRight.jpg" />
+    <None Include="wwwroot\images\HomePageBottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Views\Shared\Menu.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

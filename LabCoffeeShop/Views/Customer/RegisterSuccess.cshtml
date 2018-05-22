@@ -1,0 +1,92 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "CustomerRegister";
+}
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+    </style>
+</head>
+
+<body>
+
+    <h2 style="color:#0fad00">Success</h2>
+
+    <p>Dear, @ViewBag.firstName</p>
+
+    <p>
+        Thank You for registering at Adam's Coffee. Please check the account information below to verify that your information is correct.
+    </p>
+    <p>
+
+        <style>
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 70%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+                tr:nth-child(even) {
+                    background-color: #dddddd;
+                }
+        </style>
+
+
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td>@ViewBag.firstName @ViewBag.lastName</td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td>@ViewBag.email</td>
+            </tr>
+            <tr>
+                <td>Phone Number:</td>
+                <td>@ViewBag.number</td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td>@ViewBag.password</td>
+            </tr>
+        </table>
+
+<p>
+    <br />
+    Please click the link that we sent to @ViewBag.email to verify your email address. If you have any trouble,
+    please copy the url and paste into browser.
+</p>
+<p>
+    Once your email address is verified successfully, please <a href="http://localhost:61316/Customer/Login">click here</a> to login.
+</p>
+<p>
+    Thank you.
+</p>
+
+<p>
+    Regards,<br />Adam
+</p>
+<p>
+    <i>
+        This is auto-generated email from the application, so please do
+        not reply. If you have any queries, please feel free to contact our
+        Customer Care.
+    </i>
+</p>
+ </body>
+    </html>
